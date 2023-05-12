@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form id="formulario">
+          <div class="input-container">
+            <label class="input-title" for="day-input">DAY</label>
+            <input
+              name="day"
+              type="number"
+              class="input"
+              id="day-input"
+              placeholder="DD"
+            />
+            <small class="small"> </small>
+          </div>
+          <div class="input-container">
+            <label class="input-title" for="month-input">MONTH</label>
+            <input
+              name="month"
+              type="number"
+              class="input"
+              id="month-input"
+              placeholder="MM"
+            />
+            <small class="small"> </small>
+          </div>
+          <div class="input-container">
+            <label class="input-title" for="year-input">YEAR</label>
+            <input
+              name="year"
+              type="number"
+              class="input"
+              id="year-input"
+              placeholder="YYY"
+              size="2"
+            />
+            <small class="small"></small>
+          </div>
+        </form>
+        <div class="divider">
+          <button class="arrow-container" type="submit" form="formulario">
+            <img src="./assets/images/icon-arrow.svg" alt="Arrow image" />
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <p><span id="years-body">--</span> years</p>
+        <p><span id="months-body">--</span> months</p>
+        <p><span id="days-body">--</span> days</p>
+      </main>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
